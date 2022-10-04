@@ -1,6 +1,7 @@
 ﻿  main.cpp
-C:\Users\AlexPC\source\repos\SFML_Run2D\SFML_Run2D\main.cpp(19,14): warning C4244: инициализация: преобразование "sf::Int64" в "float", возможна потеря данных
-C:\Users\AlexPC\source\repos\SFML_Run2D\SFML_Run2D\main.cpp(35,19): warning C4244: аргумент: преобразование "double" в "float", возможна потеря данных
-C:\Users\AlexPC\source\repos\SFML_Run2D\SFML_Run2D\main.cpp(39,18): warning C4244: аргумент: преобразование "double" в "float", возможна потеря данных
-C:\Users\AlexPC\source\repos\SFML_Run2D\SFML_Run2D\main.cpp(43,22): warning C4305: аргумент: усечение из "double" в "float"
-  SFML_Run2D.vcxproj -> C:\Users\AlexPC\source\repos\SFML_Run2D\x64\Debug\SFML_Run2D.exe
+C:\Users\AlexPC\Documents\GitHub\SFML_Run2D\SFML_Run2D\Player.h(32,26): warning C4244: =: преобразование "double" в "float", возможна потеря данных
+C:\Users\AlexPC\Documents\GitHub\SFML_Run2D\SFML_Run2D\main.cpp(25,14): warning C4244: инициализация: преобразование "sf::Int64" в "float", возможна потеря данных
+C:\Users\AlexPC\Documents\GitHub\SFML_Run2D\SFML_Run2D\main.cpp(42,20): warning C4305: =: усечение из "double" в "float"
+C:\Users\AlexPC\Documents\GitHub\SFML_Run2D\SFML_Run2D\main.cpp(47,19): warning C4305: =: усечение из "double" в "float"
+C:\Users\AlexPC\Documents\GitHub\SFML_Run2D\SFML_Run2D\main.cpp(52,43): warning C4305: =: усечение из "double" в "float"
+  SFML_Run2D.vcxproj -> C:\Users\AlexPC\Documents\GitHub\SFML_Run2D\x64\Debug\SFML_Run2D.exe

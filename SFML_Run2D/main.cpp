@@ -9,6 +9,13 @@ int main() {
 	// console anti-spam "Failed to set DirectInput device axis mode: 1"
 	sf::err().rdbuf(NULL);
 
+	// load player
+	Player player;
+
+	//
+	// TODO: Draw animation
+	//
+
 	// link the game to the time
 	sf::Clock clock;
 
@@ -31,19 +38,24 @@ int main() {
 		if (sf::Keyboard::isKeyPressed(sf::Keyboard::Left))
 		{
 			// speed * time = distance
-			shape.move(-0.1*time, 0);
+			//s.move(-0.1*time, 0);
+			player.dx = -0.1;
 		}
 		if (sf::Keyboard::isKeyPressed(sf::Keyboard::Right))
 		{
-			shape.move(0.1*time, 0);
+			//s.move(0.1*time, 0);
+			player.dx = 0.1;
 		}
 		if (sf::Keyboard::isKeyPressed(sf::Keyboard::Up))
 		{
-			shape.move(0, -0.1);
+			//s.move(0, -0.1);
+			if (player.onGround) { player.dy = -0.4; player.onGround = false; }
 		}
 
+		player.update(time);
+
 		window.clear();
-		window.draw(shape);
+		window.draw(player.sprite);
 		window.display();
 	}
 
