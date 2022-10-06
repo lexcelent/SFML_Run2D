@@ -12,9 +12,8 @@ int main() {
 	// load player
 	Player player;
 
-	//
-	// TODO: Draw animation
-	//
+	// Draw the map
+	sf::RectangleShape rectangle(sf::Vector2f(TileSize, TileSize));
 
 	// link the game to the time
 	sf::Clock clock;
@@ -55,6 +54,19 @@ int main() {
 		player.update(time);
 
 		window.clear();
+
+		// draw the map
+		for (int i = 0; i < H; i++)
+			for (int j = 0; j < W; j++)
+			{
+				if (TileMap[i][j] == 'B')
+					rectangle.setFillColor(sf::Color::White);
+				else
+					continue;
+				rectangle.setPosition(j * TileSize, i * TileSize);
+				window.draw(rectangle);
+			}
+
 		window.draw(player.sprite);
 		window.display();
 	}
